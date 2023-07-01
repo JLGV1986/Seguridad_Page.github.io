@@ -10,7 +10,6 @@ router.get("/nosotros", (req, res) =>
   res.render("nosotros", { title: "Acerca de Nosotros" })
 );
 
-
 router.get("/servicios", (req, res) =>
   res.render("servicios", { title: "Nuestros Servicios" })
 );
