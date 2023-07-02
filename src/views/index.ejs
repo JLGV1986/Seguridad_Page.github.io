@@ -14,18 +14,13 @@
   <%- include('partials/navigation') %>
 
     <!-- Main content-->
-    <header class="container d-flex justify-content-center align-items-center">
-      <div class="overlay"></div>
-      <div class="absolute">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <img src="/img/logoSeg.png" alt="Seguridad" class="w-25">
-          <h2 class="display-4 my-5 fw-regular">Seguridad</h2>
-          <a href="/servicios" class="btn btn-primary w-25">Servicios</a>
-        </div>
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="/img/logoSeg.png" alt="Seguridad" class="w-25">
+        <h2 class="display-4 my-5 fw-regular">Seguridad</h2>
+        <a href="/servicios" class="btn btn-primary w-25">Servicios</a>
       </div>
-      <video onloadedmetadata="this.muted=true" autoplay loop>
-        <source src="/img/matrix_console.mp4">
-      </video>
+
     </header>
 
     <%- include('partials/footer') %>
