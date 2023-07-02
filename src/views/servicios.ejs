@@ -2,29 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= title %>
-    </title>
-    <%- include('partials/head') %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+  <%- include('partials/head') %>
 </head>
 
 <body>
-    <%- include('partials/navigation') %>
-<main>
-  <section >
+  <%- include('partials/navigation') %>
+    <main class="container vh-100 d-flex justify-content-center align-items-center">
       <h1>Servicios</h1>
-    </section>
-  </main>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
-          <div class="card">
-            <img src="/src/public/img/1raEvaluacion.jpg" class="card-img-top" alt="Evaluación inicial">
+          <div class="card bg-dark text-white" style="width: 25rem;">
+            <img src="/img/1raEvaluacion.jpg" class="card-img-top img-fluid rounded" alt="Evaluación inicial">
+          </div>
+          <div class="card-header">
+            <h5 class="card-title">Evaluación inicial</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Realizamos una evaluación para determinar el estado actual de la seguridad de la
+              información en la organización. Esto implica identificar los activos de información críticos, las amenazas
+              y vulnerabilidades existentes, y evaluar el grado de cumplimiento con los requisitos de ISO 27001 en su
+              organización.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card bg-dark text-white" style="width: 25rem;">
+            <img src="/img/DesarrolloProcedimientos.jpg" class="card-img-top img-fluid rounded"
+              alt="Desarrollo de políticas y procedimientos">
             <div class="card-body">
-              <h5 class="card-title">Evaluación inicial</h5>
-              <p class="card-text">Realizamos una evaluación para determinar el estado actual de la seguridad de la información en la organización. Esto implica identificar los activos de información críticos, las amenazas y vulnerabilidades existentes, y evaluar el grado de cumplimiento con los requisitos de ISO 27001 en su organización.</p>
+              <h5 class="card-title">Desarrollo de políticas y procedimientos</h5>
+              <p class="card-text">Elaboración de políticas y procedimientos de seguridad de la información que se
+                ajusten a los requisitos de ISO 27001. Estas políticas y procedimientos abarcan áreas como el acceso
+                físico y lógico, la gestión de activos, la gestión de incidentes, la continuidad del negocio y otros
+                aspectos clave de la seguridad de la información.</p>
             </div>
           </div>
         </div>
@@ -33,7 +50,8 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
         </div>
@@ -42,7 +60,8 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
           </div>
         </div>
@@ -51,23 +70,15 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
           </div>
         </div>
       </div>
-   
+    </main>
 
-    <%- include('partials/footer') %> 
+    <%- include('partials/footer') %>
 </body>
 
 </html>
